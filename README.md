@@ -35,21 +35,47 @@ This class extends gene finding capabilities by allowing custom start and stop c
 ### AdditionalTests.java
 This class provides additional tests for the functionalities of `GeneFinder` and `GeneFinderAdvanced`, as well as methods from `StringAnalyzer`.
 
+### StringAnalyzer.java
+This class includes methods to:
+- `twoOccurrences(String stringa, String stringb)`: Checks if `stringa` appears at least twice in `stringb`.
+- `lastPart(String stringa, String stringb)`: Returns the part of `stringb` that comes after the first occurrence of `stringa`.
+- `testing()`: Contains several test cases to verify the functionality of the `twoOccurrences` method.
+
+### LinkExtractor.java
+This class extracts YouTube links from a given URL. It performs the following tasks:
+- `findYoutubeLinks(String urlString)`: Reads the content from the provided URL and searches for YouTube links.
+
 ## How to Run
 
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/yourusername/java-dsa-repo.git
+   ```
+
 2. **Navigate to the directory:**
    ```bash
    cd java-dsa-repo
-3. **Compile the Java Files**
+   ```
+
+3. **Compile the Java Files:**
    ```bash
    javac *.java
-4. **Run the main class of the desired program**
+   ```
+
+4. **Run the main class of the desired program:**
    ```bash
    java GeneAnalyzer
    java GeneFinder
    java GeneFinderAdvanced
    java AdditionalTests
+   java StringAnalyzer
+   java LinkExtractor
+   ```
 
+## Contribution
+
+Feel free to contribute to this repository by submitting pull requests or opening issues for any improvements or bugs.
+
+## License
+
+This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
